@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control DKM - Controle de Estoque e Acesso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <h1>Control DKM</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#features">Recursos</a></li>
+                <li><a href="#carousel">Galeria</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="home" class="home-section">
+        <div class="hero-text">
+            <h2>Gerencie seu estoque e controle de usuários com facilidade</h2>
+            <p>O Control DKM é a solução completa para o seu negócio.</p>
+            <p class="login-note">Para utilizar o Control DKM, é necessário fazer login com sua conta própria.</p>
+        </div>
+    </section>
+
+    <!-- Carrossel de Imagens e Vídeos -->
+    <section id="carousel" class="carousel-section">
+        <h2>Galeria do Control DKM</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <video class="carousel-video" controls muted>
+                        <source src="VideosProjetos/Estoquista - Cadastrar.mp4" type="video/mp4">
+                        Seu navegador não suporta a reprodução de vídeos.
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Seção de Recursos -->
+    <section id="features" class="features-section">
+        <h2>Recursos Principais</h2>
+        <div class="features-container">
+            <div class="feature-item">
+                <h3>Controle de Estoque</h3>
+                <p>Monitore seu inventário em tempo real.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Controle de Acesso</h3>
+                <p>Gestão de permissões e segurança com acesso individual e protegido por conta.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Relatórios Personalizados</h3>
+                <p>Visualize e baixe relatórios detalhados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial -->
+    <section id="tutorial" class="features-section">
+        <h2>Como Executar o Software</h2>
+        <ol>
+            <li>Baixe o arquivo na seção de download abaixo.</li>
+            <li>Extraia o conteúdo do arquivo ZIP em uma pasta de sua preferência.</li>
+            <li>Abra o terminal ou prompt de comando.</li>
+            <li>Navegue até a pasta extraída.</li>
+            <li>Execute o comando <code>python app.py</code> (é necessário ter o Python instalado).</li>
+            <li>Acesse o software através do navegador em <code>http://localhost:5000</code>.</li>
+        </ol>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="features-section">
+        <h2>Download</h2>
+        <p>Clique no botão abaixo para baixar o Control DKM:</p>
+        <button onclick="redirectToDownload()">Baixar Control DKM</button>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <textarea id="message" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function redirectToDownload() {
+            window.location.href = "https://example.com/download"; // Substitua pela URL do download
+        }
+    </script>
+</body>
+</html>
